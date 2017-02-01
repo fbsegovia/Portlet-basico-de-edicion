@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<portlet-app xmlns='http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:schemaLocation='http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd'
+	version='1.0'>
+	
+	<portlet>
+		<portlet-name>TablaPersonas_Portlet</portlet-name>
+		<display-name>TablaPersonas_Portlet</display-name>
+		<portlet-class>portlets.TablaPortlets</portlet-class>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>EDIT</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Este es el portlet de Tabla Persona</title>
+		</portlet-info>
+		
+		<!-- Preferencias prediseñadas -->
+		<portlet-preferences>
+			<preference>
+				<name>mostrarNombre</name>
+				<value>checked</value>
+			</preference>
+			<preference>
+				<name>mostrarDireccion</name>
+				<value>checked</value>
+			</preference>
+			<preference>
+				<name>mostrarTelefono</name>
+				<value>checked</value>
+			</preference>
+			<preference>
+				<name>color</name>
+				<value>#ff0000</value>
+			</preference>
+		</portlet-preferences>
+		
+	</portlet>
+</portlet-app>
